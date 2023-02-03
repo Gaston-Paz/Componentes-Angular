@@ -1,0 +1,23 @@
+*{
+    color: #fff;
+}
+
+h1{
+    display: contents;
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 500;
+}
+
+.borde{
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.mr-3{
+    margin-right: 3px;
+}
