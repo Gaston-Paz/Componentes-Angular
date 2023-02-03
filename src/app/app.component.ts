@@ -40,6 +40,8 @@ export class AppComponent {
   textDialog:string="Abrí el Dialog";
   color:string="primary";
   icon:string="more_vert";
+  iconDelete:string="delete";
+  iconHome:string="home";
   clickButton(){
     console.log('click');
   }
