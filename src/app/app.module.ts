@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from './table/table.module';
 import { ButtonModule } from './button/button.module';
+import { SnackModule } from './snack/snack.module';
 
 
 
@@ -17,7 +18,8 @@ import { ButtonModule } from './button/button.module';
     BrowserModule,
     BrowserAnimationsModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    SnackModule
   ],
   providers: [],
   bootstrap: [AppComponent]

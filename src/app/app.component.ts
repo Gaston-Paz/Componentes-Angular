@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SnackService } from './snack/snack.service';
 import { User } from './user.interface';
 
 @Component({
@@ -8,6 +9,8 @@ import { User } from './user.interface';
 })
 export class AppComponent {
   title = 'Componentes';
+
+  constructor(private _snackBar: SnackService){}
 
   //Table
   users:User[]=[
@@ -30,11 +33,16 @@ export class AppComponent {
   appearance:string='outline';
 
   //Button
-  text:string="Apreta";
+  text:string="Abrí Snack Bar";
   color:string="primary";
   icon:string="more_vert";
   clickButton(){
     console.log('click');
+  }
+
+  //Snack
+  ShowSnack(){
+    this._snackBar.openSnackBar('Probando snack bar','warning',120000);
   }
 
 }

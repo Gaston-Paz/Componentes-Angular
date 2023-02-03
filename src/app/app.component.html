@@ -1,8 +1,9 @@
 <app-table [columns]="columns" [data]="users" [titles]="titles" [props]="props" ></app-table>
-<app-button-basic [text]="text" [color]="color" (clickButton)="clickButton()"></app-button-basic>
-<app-button-raised [text]="text" [color]="color" (clickButton)="clickButton()"></app-button-raised>
-<app-button-stroked [text]="text" [color]="color" (clickButton)="clickButton()"></app-button-stroked>
-<app-button-flat [text]="text" [color]="color" (clickButton)="clickButton()"></app-button-flat>
+<app-button-basic [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-basic>
+<app-button-raised [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-raised>
+<app-button-stroked [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-stroked>
+<app-button-flat [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-flat>
 <app-button-icon [icon]="icon" [color]="color" (clickButton)="clickButton()"></app-button-icon>
 <app-button-fab [icon]="icon" [color]="color" (clickButton)="clickButton()"></app-button-fab>
 <app-button-minifab [icon]="icon" [color]="color" (clickButton)="clickButton()"></app-button-minifab>
+
