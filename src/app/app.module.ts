@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from './table/table.module';
 import { ButtonModule } from './button/button.module';
 import { SnackModule } from './snack/snack.module';
+import { DialogModule } from './dialog/dialog/dialog.module';
 
 
 
@@ -19,7 +20,8 @@ import { SnackModule } from './snack/snack.module';
     BrowserAnimationsModule,
     TableModule,
     ButtonModule,
-    SnackModule
+    SnackModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

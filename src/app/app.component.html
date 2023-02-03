@@ -17,8 +17,8 @@
         <span>El snack recibe en su método de llamado el texto, una clase para el estilo y el tiempo de duración.</span>
         <br>
         <div class="borde">
-            <app-button-basic class="mr-3" [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-basic>
-            <app-button-raised class="mr-3" [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-raised>
+            <app-button-basic class="mr-3" [text]="textDialog" [color]="color" (clickButton)="ShowDialog()"></app-button-basic>
+            <app-button-raised class="mr-3" [text]="textDialog" [color]="color" (clickButton)="ShowDialog()"></app-button-raised>
             <app-button-stroked class="mr-3" [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-stroked>
             <app-button-flat class="mr-3" [text]="text" [color]="color" (clickButton)="ShowSnack()"></app-button-flat>
             <app-button-icon class="mr-3" [icon]="icon" [color]="color" (clickButton)="clickButton()"></app-button-icon>

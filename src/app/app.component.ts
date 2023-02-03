@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SnackService } from './snack/snack.service';
 import { User } from './user.interface';
+import { DialogComponent } from './dialog/dialog/dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,8 @@ import { User } from './user.interface';
 export class AppComponent {
   title = 'Componentes';
 
-  constructor(private _snackBar: SnackService){}
+  constructor(private _snackBar: SnackService,
+    private _dialog: MatDialog){}
 
   //Table
   users:User[]=[
@@ -34,6 +37,7 @@ export class AppComponent {
 
   //Button
   text:string="Abrí Snack Bar";
+  textDialog:string="Abrí el Dialog";
   color:string="primary";
   icon:string="more_vert";
   clickButton(){
@@ -45,4 +49,19 @@ export class AppComponent {
     this._snackBar.openSnackBar('Probando snack bar','warning',120000);
   }
 
+  //Dialog
+  ShowDialog(){
+    const dialogRef = this._dialog.open(DialogComponent, {
+      data: {
+        message:
+          "¿Desa confirmar?",
+        buttonText: {
+          ok: "Confirmar",
+          cancel: "Cancelar",
+        }
+      },
+    });
+
+    dialogRef.afterClosed().subscribe((confirm: boolean) => {});
+  }
 }
