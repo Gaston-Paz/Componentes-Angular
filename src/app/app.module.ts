@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from './table/table.module';
+import { ButtonModule } from './button/button.module';
 
 
 
@@ -15,7 +16,8 @@ import { TableModule } from './table/table.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

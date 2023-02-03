@@ -28,4 +28,13 @@ export class AppComponent {
   titles:string[]= ['Nombre de Usuario','Email'];
   props:string[]=['nombreUsuario','email'];
   appearance:string='outline';
+
+  //Button
+  text:string="Apreta";
+  color:string="primary";
+  icon:string="more_vert";
+  clickButton(){
+    console.log('click');
+  }
+
 }
